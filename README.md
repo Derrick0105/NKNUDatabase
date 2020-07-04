@@ -15,3 +15,9 @@
 3.操作頁面
 
 ![image](https://github.com/Derrick0105/NKNUDatabase/blob/master/%E6%95%99%E5%AD%B82.png)
+
+關於操作頁面,會有說明,例如第一題
+某個變速箱供應商在某個時間裡做出來的供應商都出了問題
+要找出誰買了變速箱有問題的車,車的VIN號是多少,我這裡就提供了供應商跟變速箱的製造時間
+
+![image](https://github.com/Derrick0105/NKNUDatabase/blob/master/%E6%95%99%E5%AD%B84.png)
