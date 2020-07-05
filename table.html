@@ -1,0 +1,800 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Elements | Nucleus</title>
+    <meta name="description" content="Premium HTML5 Template">
+    <meta name="keywords" content=" HTML5, Premium Template, Nucleus Theme">
+    <meta name="author" content="Amazyne Themes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Loading Google Fonts -->
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Loading Third Party Styles -->
+
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/et-line/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/elegant-icons/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/pe-icon-7-stroke/css/helper.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/nivo-lightbox/css/nivo-lightbox.css' %}"/>
+    <link rel="stylesheet" href="{% static 'third-party/nivo-lightbox/themes/default/default.css' %}"/>
+    <link rel="stylesheet" href="{% static 'third-party/animate/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/owl/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/owl/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/form-validation/css/formValidation.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'third-party/date-range-picker/css/daterangepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/pick-a-color/css/pick-a-color-1.2.3.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap-timepicker/css/bootstrap-timepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap-multiselect/css/bootstrap-multiselect.css' %}">
+
+
+    <!-- Loading Theme's Styles -->
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!-- Script for IE < 9 -->
+
+    <!--[if lt IE 9]>
+		<script src="third-party/respond/js/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<!-- Remove "header-side" if side menu isn't present | Remove "in" if you want the side-header closed by default -->
+
+<body class="header-side in">
+
+<!-- Page Loader -->
+
+<div class="loader">
+    <div class="spinner"></div>
+</div>
+
+<!-- Page Content -->
+
+<div class="page-content">
+
+    <!-- Header - Add "light" for light menu | "nav-dark-blue" for dark-blue accent | "nav-blue" for blue accent | "nav-blue-grey" for blue-grey accent |
+         "nav-green" for green accent | "nav-dark-green" for sea-green accent | "nav-purple" for purple accent | "nav-red" for red accent |
+          "nav-orange" for peach accent | "nav-yellow" for yellow accent -->
+
+    <header class="navigation">
+
+        <!-- Header Wrapper -->
+
+        <div class="main-nav dark-dropdown nav-icons-right header-icons header-right">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container active">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <ul class="bar-icon-wrapper">
+                                <li class="bar-icon"></li>
+                                <li class="bar-icon"></li>
+                                <li class="bar-icon"></li>
+                            </ul>
+                        </a>
+
+                        <!-- Logo -->
+
+                        <a class="logo" href="/">
+                            <img alt="image" src="{% static 'images/nknu_logo.png' %}"/>
+                        </a><!-- End of Logo -->
+                    </div>
+
+                    <!-- Top Bar Icons -->
+
+                    <div class="navbar-icons">
+
+                        <!-- Left aligned icons-->
+
+                        <ul class="nav navbar-nav navbar-left">
+
+                            <!-- Sidebar Menu Trigger -->
+
+                            <li class="menu-icon">
+                                <a class="side-menu-trigger" href="#">
+                                    <ul class="bar-icon-wrapper">
+                                        <li class="bar-icon"></li>
+                                        <li class="bar-icon"></li>
+                                        <li class="bar-icon"></li>
+                                    </ul>
+                                </a>
+                            </li><!-- End of Sidebar Menu Trigger -->
+
+                            <!-- Account Dropdown -->
+
+
+                        </ul><!-- End of Left Aligned Icons -->
+
+                        <!-- Right Aligned Icons -->
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search panel -->
+
+            <div class="full-screen-search">
+                <div class="search-container">
+                    <div class="search-holder">
+                        <form id="searchForm" method="post" action="search-results.html">
+                            <input type="text" name="search" class="search-field"
+                                   placeholder="Type and Press Enter to Submit"/>
+                            <input type="hidden" name="search"/>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- End of Search Panel -->
+
+            <!-- Side Header | Remove "active" if you want side header closed by default -->
+
+            <div class="side-header active">
+                <div class="side-header-container">
+                    <div class="side-header-inner-container">
+                        <ul class="side-header-nav">
+
+                            <li>
+                                <a class="with-badge" href="/"><i class="icon-grid"></i> 查詢</a>
+                            </li>
+
+                            <li class="active">
+                                <a class="with-badge" href="/table"><i class="icon-grid"></i> 期末專題關聯表總覽</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!-- End of Header -->
+
+
+    <!-- Page Header -->
+
+    <section class="page-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 header-inline">
+                    <div class="header-inline-content">
+                        <h2 class="page-title">專案中的關聯表</h2>
+                    </div>
+                    <div class="header-inline-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End of Page Header -->
+
+
+    <div class="section-admin container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="admin-content">
+                    <h3>Table - vehicles</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme table-bordered">
+                        <thead>
+                        <tr>
+                            <th>
+                                VIN
+                            </th>
+                            <th>
+                                brand
+                            </th>
+                            <th>
+                                model
+                            </th>
+                            <th>
+                                transmission
+                            </th>
+                            <th>
+                                engine
+                            </th>
+                            <th>
+                                factory
+                            </th>
+                            <th>
+                                MFD
+                            </th>
+                            <th>
+                                dealer
+                            </th>
+                            <th>
+                                transaction_date
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for vehicle in vehicles %}
+                            <tr>
+                                <td>
+                                    {{ vehicle.0 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.1 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.2 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.3 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.4 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.5 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.6 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.7 }}
+                                </td>
+                                <td>
+                                    {{ vehicle.8 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="admin-content">
+                    <h3>Table - transmissions</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme">
+                        <thead class="bg-purple">
+                        <tr>
+                            <th>
+                                serial
+                            </th>
+                            <th>
+                                model
+                            </th>
+                            <th>
+                                supplier
+                            </th>
+                            <th>
+                                MFD
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for transmission in transmissions %}
+                            <tr>
+                                <td>
+                                    {{ transmission.0 }}
+                                </td>
+                                <td>
+                                    {{ transmission.1 }}
+                                </td>
+                                <td>
+                                    {{ transmission.2 }}
+                                </td>
+                                <td>
+                                    {{ transmission.3 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="admin-content">
+                    <h3>Table - suppliers</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme">
+                        <thead class="bg-blue">
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                name
+                            </th>
+                            <th>
+                                tel
+                            </th>
+                            <th>
+                                address
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for supplier in suppliers %}
+                            <tr>
+                                <td>
+                                    {{ supplier.0 }}
+                                </td>
+                                <td>
+                                    {{ supplier.1 }}
+                                </td>
+                                <td>
+                                    {{ supplier.2 }}
+                                </td>
+                                <td>
+                                    {{ supplier.3 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Jacob
+                            </td>
+                            <td>
+                                Thornton
+                            </td>
+                            <td>
+                                @fat
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Larry
+                            </td>
+                            <td>
+                                the Bird
+                            </td>
+                            <td>
+                                @twitter
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="admin-content">
+                    <h3>Table - transaction</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme">
+                        <thead class="bg-dark-green">
+                        <tr>
+                            <th>
+                                serial
+                            </th>
+                            <th>
+                                VIN
+                            </th>
+                            <th>
+                                brand
+                            </th>
+                            <th>
+                                dealer
+                            </th>
+                            <th>
+                                customer
+                            </th>
+                            <th>
+                                price
+                            </th>
+                            <th>
+                                date
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for transaction in transactions %}
+                            <tr>
+                                <td>
+                                    {{ transaction.0 }}
+                                </td>
+                                <td>
+                                    {{ transaction.1 }}
+                                </td>
+                                <td>
+                                    {{ transaction.2 }}
+                                </td>
+                                <td>
+                                    {{ transaction.3 }}
+                                </td>
+                                <td>
+                                    {{ transaction.4 }}
+                                </td>
+                                <td>
+                                    {{ transaction.5 }}
+                                </td>
+                                <td>
+                                    {{ transaction.6 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="admin-content">
+                    <h3>Table - models</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme">
+                        <thead class="bg-red">
+                        <tr>
+                            <th>
+                                name
+                            </th>
+                            <th>
+                                brand
+                            </th>
+                            <th>
+                                transmission
+                            </th>
+                            <th>
+                                engine
+                            </th>
+                            <th>
+                                tire
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for model in models %}
+                            <tr>
+                                <td>
+                                    {{ model.0 }}
+                                </td>
+                                <td>
+                                    {{ model.1 }}
+                                </td>
+                                <td>
+                                    {{ model.2 }}
+                                </td>
+                                <td>
+                                    {{ model.3 }}
+                                </td>
+                                <td>
+                                    {{ model.4 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="admin-content">
+                    <h3>Table - manufacturing_plants</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme">
+                        <thead class="bg-orange">
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                location
+                            </th>
+                            <th>
+                                tel
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for plant in plants %}
+                            <tr>
+                                <td>
+                                    {{ plant.0 }}
+                                </td>
+                                <td>
+                                    {{ plant.1 }}
+                                </td>
+                                <td>
+                                    {{ plant.2 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="admin-content">
+                    <h3>Table - engines</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme">
+                        <thead class="bg-yellow">
+                        <tr>
+                            <th>
+                                serial
+                            </th>
+                            <th>
+                                model
+                            </th>
+                            <th>
+                                supplier
+                            </th>
+                            <th>
+                                MFD
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for engine in engines %}
+                            <tr>
+                                <td>
+                                    {{ engine.0 }}
+                                </td>
+                                <td>
+                                    {{ engine.1 }}
+                                </td>
+                                <td>
+                                    {{ engine.2 }}
+                                </td>
+                                <td>
+                                    {{ engine.3 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="admin-content">
+                    <h3>Table - dealer</h3><br>
+
+                    <!-- Table - Theme + Colored -->
+
+                    <table class="table table-theme">
+                        <thead class="bg-green">
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                name
+                            </th>
+                            <th>
+                                tel
+                            </th>
+                            <th>
+                                address
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for dealer in dealers %}
+                            <tr>
+                                <td>
+                                    {{ dealer.0 }}
+                                </td>
+                                <td>
+                                    {{ dealer.1 }}
+                                </td>
+                                <td>
+                                    {{ dealer.2 }}
+                                </td>
+                                <td>
+                                    {{ dealer.3 }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="admin-content">
+                    <h3>Table - customer</h3><br>
+
+                    <!-- Table - Theme - Clear + Hover -->
+
+                    <table class="table table-theme table-clear table-hover">
+                        <thead>
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                name
+                            </th>
+                            <th>
+                                address
+                            </th>
+                            <th>
+                                tel
+                            </th>
+                            <th>
+                                gender
+                            </th>
+                            <th>
+                                salary
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for customer in customers %}
+                            <tr>
+                                <td>
+                                    {{ customer.0 }}
+                                </td>
+                                <td>
+                                    {{ customer.1 }}
+                                </td>
+                                <td>
+                                    {{ customer.2 }}
+                                </td>
+                                <td>
+                                    {{ customer.3 }}
+                                </td>
+                                <td>
+                                    {{ customer.4 }}
+                                </td>
+                                <td>
+                                    {{ customer.5 }}
+                                </td>
+                            </tr>
+
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- End of Page Content -->
+
+<!-- Footer -->
+
+<footer class="footer container-fluid">
+    <div class="row">
+        <div class="col-md-12 ">
+            <p class="letter-spacing-1">©2016 Nucleus - T. +01 2345 6788 - F. +01 2345 6789</p>
+        </div>
+    </div>
+</footer><!-- End of Footer -->
+
+<!-- Loading Third Party Scripts -->
+
+<script src="{% static 'third-party/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'third-party/easing/js/jquery.easings.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'third-party/nivo-lightbox/js/nivo-lightbox.min.js' %}"></script>
+<script src="{% static 'third-party/owl/js/owl.carousel.js' %}"></script>
+<script src="{% static 'third-party/counter-up/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'third-party/form-validation/js/formValidation.js' %}"></script>
+<script src="{% static 'third-party/form-validation/js/framework/bootstrap.min.js' %}"></script>
+<script src="{% static 'third-party/waypoint/js/waypoints.min.js' %}"></script>
+<script src="{% static 'third-party/wow/js/wow.min.js' %}"></script>
+<script src="{% static 'third-party/slimscroll/jquery.slimscroll.js' %}"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+<script src="{% static 'third-party/dropzone/js/dropzone.min.js' %}"></script>
+<script src="{% static 'third-party/date-range-picker/js/moment.min.js' %}"></script>
+<script src="{% static 'third-party/date-range-picker/js/daterangepicker.js' %}"></script>
+<script src="{% static 'third-party/pick-a-color/dependencies/tinycolor-0.9.15.min.js' %}"></script>
+<script src="{% static 'third-party/pick-a-color/js/pick-a-color-1.2.3.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap-timepicker/js/bootstrap-timepicker.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap-multiselect/js/bootstrap-multiselect.js' %}"></script>
+<script>
+    $('#singleDatePicker').daterangepicker({
+        "singleDatePicker": true,
+        "startDate": "02/15/2016",
+        "endDate": "02/21/2016"
+    });
+
+    $('#dateRangePicker').daterangepicker({
+        "showDropdowns": true,
+        "autoApply": true,
+    });
+    var today = moment().format('MM/D/YYYY');
+    $('#advancedDateRangePicker').daterangepicker({
+        "timePicker": true,
+        "minDate": today,
+        "startDate": today,
+        "endDate": "02/21/2016",
+        "opens": "left"
+    });
+    $(".pick-a-color").pickAColor();
+    $('.colorpicker').colorpicker();
+    $('#timepicker').timepicker();
+    $('#multiselect').multiselect();
+    $('#multiGroupSelect').multiselect({
+        enableClickableOptGroups: true,
+        buttonWidth: '100%'
+    });
+    $('#multiselectFiltering').multiselect({
+        includeSelectAllOption: true,
+        enableFiltering: true
+    });
+</script>
+
+
+<!-- Loading Theme's Scripts -->
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/myjs.js' %}"></script>
+
+<script>
+    $(function () {
+        $('.slim-scroll-div').slimscroll({
+            height: 'auto'
+        })
+    });
+</script>
+
+<!-- Google Analytics Tracking -->
+
+<script>
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-xxxxxxxx-x', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

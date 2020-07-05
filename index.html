@@ -1,0 +1,901 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Elements | Nucleus</title>
+    <meta name="description" content="Premium HTML5 Template">
+    <meta name="keywords" content=" HTML5, Premium Template, Nucleus Theme">
+    <meta name="author" content="Amazyne Themes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Loading Google Fonts -->
+
+
+    <!-- Loading Third Party Styles -->
+
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/et-line/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/elegant-icons/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/pe-icon-7-stroke/css/helper.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/nivo-lightbox/css/nivo-lightbox.css' %}"/>
+    <link rel="stylesheet" href="{% static 'third-party/nivo-lightbox/themes/default/default.css' %}"/>
+    <link rel="stylesheet" href="{% static 'third-party/animate/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/owl/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/owl/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/form-validation/css/formValidation.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'third-party/date-range-picker/css/daterangepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/pick-a-color/css/pick-a-color-1.2.3.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap-timepicker/css/bootstrap-timepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third-party/bootstrap-multiselect/css/bootstrap-multiselect.css' %}">
+
+
+    <!-- Loading Theme's Styles -->
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!-- Script for IE < 9 -->
+
+    <!--[if lt IE 9]>
+		<script src="third-party/respond/js/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<!-- Remove "header-side" if side menu isn't present | Remove "in" if you want the side-header closed by default -->
+
+<body class="header-side in">
+
+<!-- Page Loader -->
+
+<div class="loader">
+    <div class="spinner"></div>
+</div>
+
+<!-- Page Content -->
+
+<div class="page-content">
+
+    <!-- Header - Add "light" for light menu | "nav-dark-blue" for dark-blue accent | "nav-blue" for blue accent | "nav-blue-grey" for blue-grey accent |
+         "nav-green" for green accent | "nav-dark-green" for sea-green accent | "nav-purple" for purple accent | "nav-red" for red accent |
+          "nav-orange" for peach accent | "nav-yellow" for yellow accent -->
+
+    <header class="navigation">
+
+        <!-- Header Wrapper -->
+
+        <div class="main-nav dark-dropdown nav-icons-right header-icons header-right">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container active">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <ul class="bar-icon-wrapper">
+                                <li class="bar-icon"></li>
+                                <li class="bar-icon"></li>
+                                <li class="bar-icon"></li>
+                            </ul>
+                        </a>
+
+                        <!-- Logo -->
+
+                        <a class="logo" href="/">
+                            <img alt="image" src="{% static 'images/nknu_logo.png' %}"/>
+                        </a><!-- End of Logo -->
+                    </div>
+
+                    <!-- Top Bar Icons -->
+
+                    <div class="navbar-icons">
+
+                        <!-- Left aligned icons-->
+
+                        <ul class="nav navbar-nav navbar-left">
+
+                            <!-- Sidebar Menu Trigger -->
+
+                            <li class="menu-icon">
+                                <a class="side-menu-trigger" href="#">
+                                    <ul class="bar-icon-wrapper">
+                                        <li class="bar-icon"></li>
+                                        <li class="bar-icon"></li>
+                                        <li class="bar-icon"></li>
+                                    </ul>
+                                </a>
+                            </li><!-- End of Sidebar Menu Trigger -->
+
+                            <!-- Account Dropdown -->
+
+
+                        </ul><!-- End of Left Aligned Icons -->
+
+                        <!-- Right Aligned Icons -->
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search panel -->
+
+            <div class="full-screen-search">
+                <div class="search-container">
+                    <div class="search-holder">
+                        <form id="searchForm" method="post" action="search-results.html">
+                            <input type="text" name="search" class="search-field"
+                                   placeholder="Type and Press Enter to Submit"/>
+                            <input type="hidden" name="search"/>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- End of Search Panel -->
+
+            <!-- Side Header | Remove "active" if you want side header closed by default -->
+
+            <div class="side-header active">
+                <div class="side-header-container">
+                    <div class="side-header-inner-container">
+                        <ul class="side-header-nav">
+
+
+                            <li class="active">
+                                <a class="with-badge" href="/"><i class="icon-grid"></i> 查詢</a>
+                            </li>
+
+                            <li>
+                                <a class="with-badge" href="/table"><i class="icon-grid"></i> 期末專題關聯表總覽</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!-- End of Header -->
+
+
+    <!-- Page Header -->
+
+    <section class="page-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 header-inline">
+                    <div class="header-inline-content">
+                        <h2 class="page-title">系統表格與查詢</h2>
+                    </div>
+                    <div class="header-inline-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End of Page Header -->
+
+
+    <div class="section-admin container-fluid">
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <div class="admin-content">
+                    <h4 class="text-center text-uppercase">專題中要求的查詢:</h4>
+
+                    <!--Accordion - Plus Right -->
+                    <!-- For MULTIPLE TABS OPEN - NO NEED for id="..." in the below div of panel-group AND NO NEED for data-parent="..." in panel-heading div -->
+
+                    <div class="panel-group clear-panel panel-icon-right theme-panel-dark">
+
+                        <!-- Panel 1 -->
+
+                        <div class="panel panel-default">
+
+                            <!-- Panel Heading -->
+
+                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#collapse6One"
+                                 aria-expanded="false">
+                                <h4 class="panel-title plus accordion-toggle">
+                                    1.尋找Getrag供應商有瑕疵的變速箱,並且印出裝有此變速箱的車之VIN號,以及購買的顧客
+                                </h4>
+                            </div>
+
+                            <!-- Panel Content -->
+
+                            <div id="collapse6One" class="panel-collapse collapse" aria-expanded="false"
+                                 style="height: 0px;">
+                                <div class="panel-body">
+
+
+                                    <!-- Tab - Lined -->
+
+                                    <ul class="nav tab-theme tab-lined">
+                                        <li class="active">
+                                            <a href="#tab1" data-toggle="tab" aria-expanded="true">題目</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab2" data-toggle="tab" aria-expanded="false">指令及說明</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab3" data-toggle="tab" aria-expanded="false">畫面展示</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-theme">
+                                        <div class="tab-content">
+                                            <div id="tab1" class="tab-pane active">
+                                                <p>
+                                                    Suppose that it is found that transmissions made by supplier Getrag
+                                                    between two
+                                                    given dates are defective. Find the VIN of each car containing such
+                                                    a transmission
+                                                    and the customer to which it was sold. If your design allows,
+                                                    suppose the defective
+                                                    transmissions all come from only one of Getrag’s plants.
+                                                </p>
+                                            </div>
+                                            <div id="tab2" class="tab-pane">
+                                                <p>
+                                                    SELECT vehicles.`VIN`,transaction.customer FROM `vehicles` INNER
+                                                    JOIN transaction ON vehicles.VIN=transaction.VIN WHERE
+                                                    `transmission` in (SELECT serial FROM transmissions WHERE `supplier`
+                                                    = '1')
+                                                </p>
+                                                <hr>
+                                                supplier=1的部分是指他的編號
+                                            </div>
+                                            <div id="tab3" class="tab-pane">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+
+                                                        <div class="form-group form-theme">
+                                                            <select id="multiGroupSelect" onchange="selectChange()"
+                                                                    style="display: none;">
+                                                                <optgroup label="Group 1">
+                                                                    {% for supplier in suppliers %}
+                                                                        <option value={{ forloop.counter }}>{{ supplier.1 }} </option>
+                                                                    {% endfor %}
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <table class="table" id="q1table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>
+                                                            VIN
+                                                        </th>
+                                                        <th>
+                                                            Customer ID
+                                                        </th>
+                                                        <th>
+                                                            Price
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for data in datas %}
+                                                        <tr>
+                                                            <td>
+                                                                {{ data.0 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ data.1 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ data.2 }}
+                                                            </td>
+                                                        </tr>
+
+                                                    {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+                                                老師可以點選下拉式選單,選擇供應商,所以我們的功能不只可以找出Getrag廠商的變速箱,<br>
+                                                點選後可以看見VIN號,買車的買主以及售價。
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 2 -->
+
+                        <div class="panel panel-default">
+
+                            <!-- Panel Heading -->
+
+                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#collapse6Two"
+                                 aria-expanded="false">
+                                <h4 class="panel-title plus accordion-toggle">
+                                    2.尋找去年銷售最好的經銷商
+                                </h4>
+                            </div>
+
+                            <!-- Panel Content -->
+
+                            <div id="collapse6Two" class="panel-collapse collapse" aria-expanded="false"
+                                 style="height: 0px;">
+                                <div class="panel-body">
+
+
+                                    <!-- Tab - Lined -->
+
+                                    <ul class="nav tab-theme tab-lined">
+                                        <li class="active">
+                                            <a href="#tab4" data-toggle="tab" aria-expanded="true">題目</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab5" data-toggle="tab" aria-expanded="false">指令及說明</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab6" data-toggle="tab" aria-expanded="false">畫面展示</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-theme">
+                                        <div class="tab-content">
+                                            <div id="tab4" class="tab-pane active">
+                                                <p>
+                                                    Find the dealer who has sold the most (by dollar-amount) in the past
+                                                    year.
+                                                </p>
+                                            </div>
+                                            <div id="tab5" class="tab-pane">
+                                                <p>
+                                                    SELECT dealer FROM transaction WHERE year(`date`)=year(now())-1
+                                                    group by dealer ORDER by SUM(price) DESC LIMIT 0,1
+                                                </p>
+                                            </div>
+                                            <div id="tab6" class="tab-pane">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="alert alert-success">
+                                                            去年銷售最好的經銷商是<strong>{{ topsales.0.0 }}</strong>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <table class="table" id="q2table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>
+                                                            交易序號
+                                                        </th>
+                                                        <th>
+                                                            車輛VIN碼
+                                                        </th>
+                                                        <th>
+                                                            品牌
+                                                        </th>
+                                                        <th>
+                                                            經銷商
+                                                        </th>
+                                                        <th>
+                                                            顧客ID
+                                                        </th>
+                                                        <th>
+                                                            金額
+                                                        </th>
+                                                        <th>
+                                                            交易日期
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for transaction in transactions %}
+                                                        <tr>
+                                                            <td>
+                                                                {{ transaction.0 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.1 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.2 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.3 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.4 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.5 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.6 }}
+                                                            </td>
+                                                        </tr>
+
+                                                    {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 3 (OPEN) -->
+
+                        <div class="panel panel-default">
+
+                            <!-- Panel Heading -->
+
+                            <div class="panel-heading collapsed" data-toggle="collapse"
+                                 data-target="#collapse6Three"
+                                 aria-expanded="false">
+                                <h4 class="panel-title plus accordion-toggle">
+                                    3.尋找去年賣最好的兩款品牌
+                                </h4>
+                            </div>
+
+                            <!-- Panel Content -->
+
+                            <div id="collapse6Three" class="panel-collapse collapse" aria-expanded="false"
+                                 style="height: 0px;">
+                                <div class="panel-body">
+
+
+                                    <!-- Tab - Lined -->
+
+                                    <ul class="nav tab-theme tab-lined">
+                                        <li class="active">
+                                            <a href="#tab7" data-toggle="tab" aria-expanded="true">題目</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab8" data-toggle="tab" aria-expanded="false">指令及說明</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab9" data-toggle="tab" aria-expanded="false">畫面展示</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-theme">
+                                        <div class="tab-content">
+                                            <div id="tab7" class="tab-pane active">
+                                                <p>
+                                                    Find the dealer who has sold the most (by dollar-amount) in the
+                                                    past
+                                                    year.
+                                                </p>
+                                            </div>
+                                            <div id="tab8" class="tab-pane">
+                                                <p>
+                                                    SELECT brand FROM transaction WHERE year(`date`)=year(now())-1 group
+                                                    by brand ORDER by SUM(price) DESC LIMIT 0,2
+                                                </p>
+                                            </div>
+                                            <div id="tab9" class="tab-pane">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="alert alert-info">
+                                                            去年賣的最好的兩個牌子是<strong>{{ topbrand }}</strong>與<strong>{{ secondbrand }}</strong>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <table class="table" id="q2table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>
+                                                            交易序號
+                                                        </th>
+                                                        <th>
+                                                            車輛VIN碼
+                                                        </th>
+                                                        <th>
+                                                            品牌
+                                                        </th>
+                                                        <th>
+                                                            經銷商
+                                                        </th>
+                                                        <th>
+                                                            顧客ID
+                                                        </th>
+                                                        <th>
+                                                            金額
+                                                        </th>
+                                                        <th>
+                                                            交易日期
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for transaction in transactions %}
+                                                        <tr>
+                                                            <td>
+                                                                {{ transaction.0 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.1 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.2 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.3 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.4 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.5 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.6 }}
+                                                            </td>
+                                                        </tr>
+
+                                                    {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 4 (OPEN) -->
+
+                        <div class="panel panel-default">
+
+                            <!-- Panel Heading -->
+
+                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#collapse6Four"
+                                 aria-expanded="false">
+                                <h4 class="panel-title plus accordion-toggle">
+                                    4.查SUVs哪個月賣的最好
+                                </h4>
+                            </div>
+
+                            <!-- Panel Content -->
+
+                            <div id="collapse6Four" class="panel-collapse collapse" aria-expanded="false"
+                                 style="height: 0px;">
+                                <div class="panel-body">
+
+
+                                    <!-- Tab - Lined -->
+
+                                    <ul class="nav tab-theme tab-lined">
+                                        <li class="active">
+                                            <a href="#tab10" data-toggle="tab" aria-expanded="true">題目</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab11" data-toggle="tab" aria-expanded="false">指令及說明</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab12" data-toggle="tab" aria-expanded="false">畫面展示</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-theme">
+                                        <div class="tab-content">
+                                            <div id="tab10" class="tab-pane active">
+                                                <p>
+                                                    In what month(s) do SUVs sell best?
+                                                </p>
+                                            </div>
+                                            <div id="tab11" class="tab-pane">
+                                                <p>
+                                                    SELECT month(date),`date` FROM `transaction` WHERE `brand`='SUVs'
+                                                    GROUP BY month(`date`) ORDER BY SUM(price) DESC LIMIT 0,1
+                                                </p>
+                                            </div>
+                                            <div id="tab12" class="tab-pane">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="alert alert-danger">
+                                                            SUVs在<strong>{{ bestmonth }}</strong>月賣最好
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <table class="table" id="q2table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>
+                                                            交易序號
+                                                        </th>
+                                                        <th>
+                                                            車輛VIN碼
+                                                        </th>
+                                                        <th>
+                                                            品牌
+                                                        </th>
+                                                        <th>
+                                                            經銷商
+                                                        </th>
+                                                        <th>
+                                                            顧客ID
+                                                        </th>
+                                                        <th>
+                                                            金額
+                                                        </th>
+                                                        <th>
+                                                            交易日期
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for transaction in transactions %}
+                                                        <tr>
+                                                            <td>
+                                                                {{ transaction.0 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.1 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.2 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.3 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.4 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.5 }}
+                                                            </td>
+                                                            <td>
+                                                                {{ transaction.6 }}
+                                                            </td>
+                                                        </tr>
+
+                                                    {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 5 (OPEN) -->
+
+                        <div class="panel panel-default">
+
+                            <!-- Panel Heading -->
+
+                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#collapse6Five"
+                                 aria-expanded="false">
+                                <h4 class="panel-title plus accordion-toggle">
+                                    5.尋找哪個經銷商平均囤貨時間最久
+                                </h4>
+                            </div>
+
+                            <!-- Panel Content -->
+
+                            <div id="collapse6Five" class="panel-collapse collapse" aria-expanded="false"
+                                 style="height: 0px;">
+                                <div class="panel-body">
+
+
+                                    <!-- Tab - Lined -->
+
+                                    <ul class="nav tab-theme tab-lined">
+                                        <li class="active">
+                                            <a href="#tab13" data-toggle="tab" aria-expanded="true">題目</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab14" data-toggle="tab" aria-expanded="false">指令及說明</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab15" data-toggle="tab" aria-expanded="false">畫面展示</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-theme">
+                                        <div class="tab-content">
+                                            <div id="tab13" class="tab-pane active">
+                                                <p>
+                                                    Find those dealers who keep a vehicle in inventory for the
+                                                    longest
+                                                    average time.
+                                                </p>
+                                            </div>
+                                            <div id="tab14" class="tab-pane">
+                                                <p>
+                                                    SELECT DATEDIFF(transaction.date, vehicles.transaction_date) AS
+                                                    DiffDate,transaction.dealer FROM transaction INNER JOIN vehicles ON
+                                                    transaction.VIN=vehicles.VIN GROUP BY transaction.dealer
+                                                </p>
+                                                <hr>
+                                                很抱歉我們實在無法理解題意,就我的認知,這是一個製造商的系統,為什麼會有經銷商的倉儲資訊,我不是很理解。<br>
+                                                因此我的作法是,在vehicles表中設計一個transaction_date欄位,也就是汽車賣給經銷商的時間,經銷商拿到車之後,<br>
+                                                可能會先存放,也可能直接賣,我把vehicles表與紀載交易的transaction表join起來,把經銷商拿到的時間減去賣給客戶的時間,<br>
+                                                總體越高的可能就是存放最久的經銷商。
+                                            </div>
+                                            <div id="tab15" class="tab-pane">
+                                                <div class="row">
+                                                    此題無展示之畫面
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End of Accordion - Plus Right -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-admin container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="admin-content">
+                    <h4 class="text-center text-uppercase">指令總整理:</h4>
+                    <div class="alert alert-theme">
+                        1.SELECT vehicles.`VIN`,transaction.customer FROM `vehicles` INNER JOIN transaction ON
+                        vehicles.VIN=transaction.VIN WHERE `transmission` in (SELECT serial FROM transmissions WHERE
+                        `supplier` = '1')
+                    </div>
+                    <div class="alert alert-theme">
+                        2.SELECT dealer FROM transaction WHERE year(`date`)=year(now())-1 group by dealer ORDER by
+                        SUM(price) DESC LIMIT 0,1
+                    </div>
+                    <div class="alert alert-theme">
+                        3.SELECT brand FROM transaction WHERE year(`date`)=year(now())-1 group by brand ORDER by
+                        SUM(price) DESC LIMIT 0,2
+                    </div>
+                    <div class="alert alert-theme">
+                        4.SELECT month(date) FROM `transaction` WHERE `brand`='SUVs' GROUP BY month(`date`) ORDER BY
+                        SUM(price) DESC LIMIT 0,1
+                    </div>
+                    <div class="alert alert-theme">
+                        5.SELECT DATEDIFF(transaction.date, vehicles.transaction_date) AS
+                        DiffDate,transaction.dealer FROM transaction INNER JOIN vehicles ON
+                        transaction.VIN=vehicles.VIN GROUP BY transaction.dealer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- End of Page Content -->
+
+<!-- Footer -->
+
+<footer class="footer container-fluid">
+    <div class="row">
+        <div class="col-md-12 ">
+            <p class="letter-spacing-1">©2016 Nucleus - T. +01 2345 6788 - F. +01 2345 6789</p>
+        </div>
+    </div>
+</footer><!-- End of Footer -->
+
+<!-- Loading Third Party Scripts -->
+
+<script src="{% static 'third-party/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'third-party/easing/js/jquery.easings.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'third-party/nivo-lightbox/js/nivo-lightbox.min.js' %}"></script>
+<script src="{% static 'third-party/owl/js/owl.carousel.js' %}"></script>
+<script src="{% static 'third-party/counter-up/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'third-party/form-validation/js/formValidation.js' %}"></script>
+<script src="{% static 'third-party/form-validation/js/framework/bootstrap.min.js' %}"></script>
+<script src="{% static 'third-party/waypoint/js/waypoints.min.js' %}"></script>
+<script src="{% static 'third-party/wow/js/wow.min.js' %}"></script>
+<script src="{% static 'third-party/slimscroll/jquery.slimscroll.js' %}"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+<script src="{% static 'third-party/dropzone/js/dropzone.min.js' %}"></script>
+<script src="{% static 'third-party/date-range-picker/js/moment.min.js' %}"></script>
+<script src="{% static 'third-party/date-range-picker/js/daterangepicker.js' %}"></script>
+<script src="{% static 'third-party/pick-a-color/dependencies/tinycolor-0.9.15.min.js' %}"></script>
+<script src="{% static 'third-party/pick-a-color/js/pick-a-color-1.2.3.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap-timepicker/js/bootstrap-timepicker.min.js' %}"></script>
+<script src="{% static 'third-party/bootstrap-multiselect/js/bootstrap-multiselect.js' %}"></script>
+<script>
+    $('#singleDatePicker').daterangepicker({
+        "singleDatePicker": true,
+        "startDate": "02/15/2016",
+        "endDate": "02/21/2016"
+    });
+
+    $('#dateRangePicker').daterangepicker({
+        "showDropdowns": true,
+        "autoApply": true,
+    });
+    var today = moment().format('MM/D/YYYY');
+    $('#advancedDateRangePicker').daterangepicker({
+        "timePicker": true,
+        "minDate": today,
+        "startDate": today,
+        "endDate": "02/21/2016",
+        "opens": "left"
+    });
+    $(".pick-a-color").pickAColor();
+    $('.colorpicker').colorpicker();
+    $('#timepicker').timepicker();
+    $('#multiselect').multiselect();
+    $('#multiGroupSelect').multiselect({
+        enableClickableOptGroups: true,
+        buttonWidth: '100%'
+    });
+    $('#multiselectFiltering').multiselect({
+        includeSelectAllOption: true,
+        enableFiltering: true
+    });
+</script>
+
+
+<!-- Loading Theme's Scripts -->
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/myjs.js' %}"></script>
+
+<script>
+    $(function () {
+        $('.slim-scroll-div').slimscroll({
+            height: 'auto'
+        })
+    });
+</script>
+
+<!-- Google Analytics Tracking -->
+
+<script>
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-xxxxxxxx-x', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
